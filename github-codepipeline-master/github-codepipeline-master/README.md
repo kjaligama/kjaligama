@@ -59,9 +59,6 @@ If you need to change the structure of the CodePipeline itself then run `update-
 
 ## Questions, Comments, Additions, Suggestions
 
-If you have any questions, comments, additions or suggestions please feel free to comment through GitHub, on twitter at [@mikebroberts](https://twitter.com/mikebroberts), or via email at mike@symphonia.io.
-
-If your company is looking for help using CodePipeline, CloudFormation, or architecture using AWS then please contact us at [Symphonia](https://www.symphonia.io/).
 
 ## TODO
 
