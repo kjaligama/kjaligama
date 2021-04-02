@@ -8,4 +8,9 @@ Resources:
   ApplicationBucket:
     Type: AWS::S3::Bucket
     DeletionPolicy: Retain
+    Properties:
+    VersioningConfiguration:
+                Status: Enabled
+            LoggingConfiguration:
+                DestinationBucketName: 
   
