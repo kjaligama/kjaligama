@@ -7,3 +7,17 @@ Description: github-codepipeline-app
 Resources:
   ApplicationBucket:
     Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+  ArtifactStore:
+        Type: AWS::S3::Bucket
+        DeletionPolicy: Retain
+        Properties:
+            VersioningConfiguration:
+                Status: Enabled
+            LoggingConfiguration:
+                DestinationBucketName: !Ref S3ServerAccessLogs
+                LogFilePrefix: "artifactstore/"
+            BucketEncryption:
+              ServerSideEncryptionConfiguration:
+                - ServerSideEncryptionByDefault:
+                    SSEAlgorithm: AES256
