@@ -11,6 +11,4 @@ Resources:
     Properties:
     VersioningConfiguration:
                 Status: Enabled
-            LoggingConfiguration:
-                DestinationBucketName: 
   
